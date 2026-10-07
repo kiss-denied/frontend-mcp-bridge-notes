@@ -4,6 +4,16 @@
 
 这份仓库面向想做类似联动的朋友，分享结构、权限设计、连接流程和踩坑经验。这里只发布文档；完整应用源码、私人数据与运行配置不在本仓库中。
 
+## 一起听歌的来源与致谢
+
+本实践中的一起听歌功能使用了 [Anko3o / Music-Mcp-Netease](https://github.com/Anko3o/Music-Mcp-Netease)。感谢 [Anko3o](https://github.com/Anko3o) 分享项目，为播放器与音乐 MCP 接入提供基础。
+
+原项目介绍、使用方法、音乐 MCP 配置和前端对接示例，请从[原仓库 README](https://github.com/Anko3o/Music-Mcp-Netease#readme)开始查看。
+
+本笔记记录的是在现有音乐项目基础上，增加共享后端、权限检查与 MCP Bridge，让自建前端和官方 AI 客户端使用同一套允许访问的状态与操作。原音乐项目的播放器与音乐能力归原作者及其上游贡献者；本仓库分享后续连接与适配的实践。
+
+原仓库 README 注明它基于 [eryu（耳屿）](https://github.com/sebastianevan200-stack/eryu)（**Evelyn & River**）二次改作，并标注 **CC BY-NC-SA 4.0**。原项目及其上游的具体署名与使用要求，请查看[原仓库说明](https://github.com/Anko3o/Music-Mcp-Netease#readme)和[许可证文件](https://github.com/Anko3o/Music-Mcp-Netease/blob/main/LICENSE)。
+
 **记录日期：2026-10-08。ChatGPT 路径已实际验证；Claude 路径为官方文档支持的可行方向，尚未在本项目中验收。**
 
 ## 先理解我们接的是什么
